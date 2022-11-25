@@ -43,7 +43,7 @@ Specific software and  data files required to run this analysis are not provided
 In order to run analysis tests, first step is to get the repository by running:
 
 ```
-git clone <link> DiMuonAnalysis
+git clone https://github.com/ssarkarbht/DiMuon-Search-Analysis.git DiMuonAnalysis
 ```
 
 Then go to the repository directory and set the required environment and library paths by running:
