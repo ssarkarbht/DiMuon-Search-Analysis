@@ -3,7 +3,9 @@
 ***
 
 > Author : Sourav Sarkar
+
 > Email : <ssarkar1@ualberta.ca>
+
 > Analysis Wiki : <https://wiki.icecube.wisc.edu/index.php/Search_for_Neutrino_DiMuon_Events>
 
 ***
@@ -99,6 +101,7 @@ Note: All the following fits are performed with a default random seed value `see
 In our analysis, we have two overlapping signal regions (SR1 and SR2). So we will be performing separate discovery and exclusion fit runs for each signal region.
 
 1.  **Background Only Fit**
+
    (Option 1) If you have a pulled image of the software, run:
 ```
 cd $ANALYSIS_DIR/histfitter
