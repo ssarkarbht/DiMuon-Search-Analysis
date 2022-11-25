@@ -1,0 +1,137 @@
+{
+"Output" : {
+	"outdir" : null,
+	"outfiles" : {
+		"mc_burn" : "MCBurnInput.pkl",
+		"mc_full" : "MCFullInput.pkl",
+		"mc_asimov" : "MCAsimovInput.pkl"
+		}
+	},
+
+"Input" : {
+	"Nominal" : {
+		"mc_loc" : "/data/user/ssarkar/DiMuonSearch/MC/Nominal/11_Graph/AnalysisMC/transformed/",
+		"score_loc" : "/data/user/ssarkar/DiMuonSearch/Analysis/ScoreData/nominal/",
+		"ccdis_files" : ["CCA_928_scaled.h5", "CCA_988_scaled.h5",
+				"CCA_989_scaled.h5", "CCA_999_scaled.h5"],
+		"charm_files" : ["CharmA_03_scaled.h5", "CharmA_04_scaled.h5",
+				"CharmA_05_scaled.h5", "CharmA_06_scaled.h5",
+				"CharmA_07_scaled.h5", "CharmA_08_scaled.h5",
+				"CharmA_09_scaled.h5", "CharmA_10_scaled.h5"],
+		"trident_files" : ["NTPA_2_scaled.h5", "NTPA_3_scaled.h5"],
+		"ccdis_Ascores" : ["CCA_928_scaled.dat", "CCA_988_scaled.dat",
+				"CCA_989_scaled.dat", "CCA_999_scaled.dat"],
+		"ccdis_Bscores" : ["CCB_928_scaled.dat", "CCB_988_scaled.dat",
+				"CCB_989_scaled.dat", "CCB_999_scaled.dat"],
+		"charm_Ascores" : ["CharmA_03_scaled.dat", "CharmA_04_scaled.dat",
+				"CharmA_05_scaled.dat", "CharmA_06_scaled.dat",
+				"CharmA_07_scaled.dat", "CharmA_08_scaled.dat",
+				"CharmA_09_scaled.dat", "CharmA_10_scaled.dat"],
+		"charm_Bscores" : ["CharmB_03_scaled.dat", "CharmB_04_scaled.dat",
+				"CharmB_05_scaled.dat", "CharmB_06_scaled.dat",
+				"CharmB_07_scaled.dat", "CharmB_08_scaled.dat",
+				"CharmB_09_scaled.dat", "CharmB_10_scaled.dat"],
+		"trident_Ascores" : ["NTPA_2_scaled.dat", "NTPA_3_scaled.dat"],
+		"trident_Bscores" : ["NTPB_2_scaled.dat", "NTPB_3_scaled.dat"]
+		},
+	"Systematics" : {
+		"mc_loc" : "/data/user/ssarkar/DiMuonSearch/MC/Systematics/transformed/",
+		"score_loc" : "/data/user/ssarkar/DiMuonSearch/Analysis/ScoreData/systematics/",
+		"ccdis_files" : {
+			"dom" : ["CCDom1A_1000_scaled.h5", "CCDom2A_1000_scaled.h5"],
+			"bulk" : ["CCBulkA_992_scaled.h5"],
+			"hole" : ["CCHole1A_997_scaled.h5", "CCHole2A_981_scaled.h5"]
+			},
+		"charm_files" : {
+			"dom" : ["CharmDom1A_scaled.h5", "CharmDom2A_scaled.h5"],
+			"bulk" : ["CharmBulk1A_scaled.h5", "CharmBulk2A_scaled.h5",
+				"CharmBulk3A_scaled.h5", "CharmBulk4A_scaled.h5"],
+			"hole" : ["CharmHole1A_scaled.h5", "CharmHole2A_scaled.h5"]
+			},
+		"ccdis_Ascores" : {
+			"dom" : ["CCDom1A_1000_scaled.dat", "CCDom2A_1000_scaled.dat"],
+			"bulk" : ["CCBulkA_992_scaled.dat"],
+			"hole" : ["CCHole1A_997_scaled.dat", "CCHole2A_981_scaled.dat"]
+			},
+		"ccdis_Bscores" : {
+			"dom" : ["CCDom1B_1000_scaled.dat", "CCDom2B_1000_scaled.dat"],
+			"bulk" : ["CCBulkB_992_scaled.dat"],
+			"hole" : ["CCHole1B_997_scaled.dat", "CCHole2B_981_scaled.dat"]
+			},
+		"charm_Ascores" : {
+			"dom" : ["CharmDom1A_scaled.dat", "CharmDom2A_scaled.dat"],
+			"bulk" : ["CharmBulk1A_scaled.dat", "CharmBulk2A_scaled.dat",
+				"CharmBulk3A_scaled.dat", "CharmBulk4A_scaled.dat"],
+			"hole" : ["CharmHole1A_scaled.dat", "CharmHole2A_scaled.dat"]
+			},
+		"charm_Bscores" : {
+			"dom" : ["CharmDom1B_scaled.dat", "CharmDom2B_scaled.dat"],
+			"bulk" : ["CharmBulk1B_scaled.dat", "CharmBulk2B_scaled.dat",
+				"CharmBulk3B_scaled.dat", "CharmBulk4B_scaled.dat"],
+			"hole" : ["CharmHole1B_scaled.dat", "CharmHole2B_scaled.dat"]
+			}
+		},
+	"AddBackground" : {
+		"mc_loc" : "/data/user/ssarkar/DiMuonSearch/MC/Background/transformed/",
+		"score_loc" : "/data/user/ssarkar/DiMuonSearch/Analysis/ScoreData/background/",
+		"NuTau" : {
+			"file" : "NuTauA_1004_scaled.h5",
+			"Ascore" : "NuTauA_1004_scaled.dat",
+			"Bscore" : "NuTauB_1004_scaled.dat"
+			},
+		"NuE" : {
+			"file" : "NuEA_1445_scaled.h5",
+			"Ascore" : "NuEA_1445_scaled.dat",
+			"Bscore" : "NuEB_1445_scaled.dat"
+			},
+		"Corsika" : {
+			"file" : "CORSIKAA_HE_scaled.h5",
+			"Ascore" : "CORSIKAA_HE_scaled.dat",
+			"Bscore" : "CORSIKAB_HE_scaled.dat"
+			}
+		}
+	},
+"Normalization" : {
+	"Nominal" : {
+		"ccdis" : 3903.0,
+		"charm" : 7899677.0,
+		"trident": 1000000.0
+		},
+	"Systematics" : {
+		"ccdis" : {
+			"dom" : [1000.0, 1000.0],
+			"bulk" : 992.0,
+			"hole" : [997.0, 981.0]
+			},
+		"charm" : {
+			"dom" : 2955827.0,
+			"bulk" : 988599.5,
+			"hole" : 2955827.0
+			}
+		},
+	"AddBackground" : {
+		"NuTau" : 1004.0,
+		"NuE" : 1445.0,
+		"Corsika" : 285090.0
+			}
+	},
+"WeightSystematics" : ["XS","ConvNorm","ConvGamma", "AstroNorm", "AstroGamma"],
+"XSDir" : "/data/user/ssarkar/DiMuonSearch/Data/CrossSectionData/",
+"NSQDir" : "/data/user/ssarkar/DiMuonSearch/Analysis/Fluxes/",
+"CharmXS" : "/data/user/ssarkar/DiMuonSearch/Analysis/CharmSimData/EventXS.h5",
+"CutRegions" : {
+	"CR" : ["boxcut", [0.1, 0.1, 0.5, 0.3]],
+	"VR1" : ["boxcut", [0.3, 0.35, 0.5, 0.45]],
+	"VR2" : ["boxcut", [0.55, 0.2, 0.65, 0.4]],
+	"VR3" : ["boxcut", [0.45, 0.5, 0.7, 0.6]],
+	"VR4" : ["boxcut", [0.67, 0.2, 0.77, 0.6]],
+	"ROI" : ["boxcut", [0.8, 0.4, 1.0, 1.0]],
+	"SR1" : ["hyperbola", [0.861, 0.216]],
+	"SR2" : ["hyperbola", [0.882, 0.463]],
+	"SR3" : ["hyperbola", [0.904, 0.655]]
+	},
+"Livetimes" : {
+	"burnsample" : 24151280.498,
+	"fullsample" : 336457584.0
+	}
+}

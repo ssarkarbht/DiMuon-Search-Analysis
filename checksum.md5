@@ -1,0 +1,14 @@
+fd45ccf7bbbff51b7ead768bdfed7113  process_data/MCFullInput.pkl
+56608cb22315057a0815569b5aed0348  process_data/MCAsimovInput.pkl
+07fd55ea8bb8b26155484da4f5f4c208  process_data/MCBurnInput.pkl
+e8d399580b1d6ac2fd13888ab8513553  process_data/DataBurn.pkl
+716b072b6982b1b09932ba6ba7f76c79  histfitter/results/burnSyst.tex
+3b1879ae614df8befd079373ef60f65c  histfitter/results/burnYield.tex
+87fc29c84246a468438cb17212b10d4e  histfitter/results/disc_SR1Syst.tex
+b8b3ac4a6538d923c33c3ac4b4b870aa  histfitter/results/disc_SR1Yield.tex
+246b2a5716da52316bfc0f2df136f84d  histfitter/results/disc_SR2Syst.tex
+84c66d7899ee37b62f4a38a8346158fc  histfitter/results/disc_SR2Yield.tex
+e1260c1198700cbe8dd439bad657c6d8  histfitter/results/excl_SR1Syst.tex
+2454a2b5fefe017cb7140b4aad091da3  histfitter/results/excl_SR1Yield.tex
+9c992b9c90bb3e3c2f72e374c259b01a  histfitter/results/excl_SR2Syst.tex
+0d5553bad9bbf2f73feef0f003ffbae8  histfitter/results/excl_SR2Yield.tex
