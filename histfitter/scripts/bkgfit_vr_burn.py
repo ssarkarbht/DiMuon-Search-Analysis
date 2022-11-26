@@ -17,6 +17,7 @@ from configWriter import fitConfig,Measurement,Channel,Sample
 from systematic import Systematic
 from math import sqrt
 import pickle
+import os
 
 from ROOT import gROOT
 #gROOT.LoadMacro("./macros/AtlasStyle.C")
@@ -42,6 +43,9 @@ iVR3 = inputs['VR3']["Background"]
 iVR4 = inputs['VR4']["Background"]
 
 #%%%%%%%%%%%%%%%%%%%%%%% Analysis Configuration %%%%%%%%%%%%%%%%%%%%%%%%
+if not os.path.exists("results"):
+	os.makedirs("results")
+
 # Give the analysis a name
 configMgr.analysisName = "BKGFitBurn"
 configMgr.outputFileName = f"results/{configMgr.analysisName}s_Output.root"
@@ -52,7 +56,6 @@ configMgr.nTOYs=10000
 configMgr.calculatorType=0 # 2=asymptotic calculator, 0=frequentist calculator
 configMgr.testStatType=3   # 3=one-sided profile likelihood test statistic (LHC default)
 configMgr.nPoints=20       # number of values scanned of signal-strength for upper-limit determination of signal strength.
-configMgr.seed = 100 
 configMgr.writeXML = False
 
 #%%%%%%%%%%%%%%%%%%%%%%% Define Channels, Samples, Systematics %%%%%%%%%

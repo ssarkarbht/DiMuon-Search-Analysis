@@ -10,9 +10,6 @@ Description: This script contains all the final analysis functions,
 '''
 
 #import stuff
-#from icecube import LeptonInjector
-#import LeptonWeighter as LW
-#import nuflux
 import nuSQUIDSpy as nsq
 import numpy as np
 import h5py as h5

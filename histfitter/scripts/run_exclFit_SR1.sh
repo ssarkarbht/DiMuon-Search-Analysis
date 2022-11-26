@@ -10,7 +10,7 @@ wait
 cd /DiMuonAnalysis/histfitter
 
 #Perform the parameter fit
-HistFitter.py -t -w -f -s $seed scripts/exclfit_sr1_asimov.py
+HistFitter.py -t -w -f scripts/exclfit_sr1_asimov.py
 wait
 
 #get the systematics table

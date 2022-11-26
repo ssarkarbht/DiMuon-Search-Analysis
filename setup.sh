@@ -12,7 +12,7 @@ export LD_LIBRARY_PATH=/data/user/ssarkar/I3/LW/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=/data/user/ssarkar/I3/LW/lib:$PYTHONPATH
 
 #Add current directory as the parent analysis directory
-echo "Setting Analysis driectory variable name ..."
+echo "Setting Analysis directory variable name ..."
 export ANALYSIS_DIR=$(echo `pwd`)
 
 echo "Done."

@@ -18,5 +18,3 @@ histfitter/results/excl_SR1Yield.tex
 histfitter/results/excl_SR2Syst.tex
 histfitter/results/excl_SR2Yield.tex
 
-histfitter/ul_scan/SR2_s+b/SR2_ULScans_Output_upperlimit.root
-

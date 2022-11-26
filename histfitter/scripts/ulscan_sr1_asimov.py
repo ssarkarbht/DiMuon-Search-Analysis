@@ -72,6 +72,8 @@ configMgr.writeXML = False
 # Keep SRs also in background fit confuguration
 configMgr.keepSignalRegionType = True
 ##########################
+if not os.path.exists("results"):
+        os.makedirs("results")
 
 # Give the analysis a name
 configMgr.analysisName = anaName

@@ -2,7 +2,7 @@ __pycache__
 *.i3
 *.i3.gz
 *.i3.zst
-*.pkl
+*.pickle
 *.dat
 *.h5
 *.swp

@@ -228,7 +228,7 @@ if outdir is None:
 	outdir = cwd+'/'
 #******************** Burn Sample Expectation
 livetime = config["Livetimes"]["burnsample"]
-print ("Computing MC expectations for 0.76 Years: ")
+print ("Computing MC expectations for 0.76 Years (Burn Sample Livetime): ")
 
 for key, value in reglist.items():
 	print (f"---------------Event Expectation in {key}-----------------")
@@ -246,7 +246,7 @@ generate_mcPickle(reglist, sig_holder, bkg_holder, sigsys_holder, bkgsys_holder,
 
 #******************** 10.67 Years Expectation
 livetime = config["Livetimes"]["fullsample"]
-print ("Computing MC expectations for 10.67 Years: ")
+print ("Computing MC expectations for 10.67 Years (Full Sample Livetime): ")
 for key, value in reglist.items():
 	print (f"---------------Event Expectation in {key}-----------------")
 	tot, bkg, sig = get_MCCounts(sig_holder, bkg_holder,

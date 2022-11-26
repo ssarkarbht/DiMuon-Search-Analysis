@@ -10,7 +10,7 @@ wait
 cd /DiMuonAnalysis/histfitter
 
 #Perform the parameter fit
-HistFitter.py -t -w -f -s $seed scripts/ulscan_sr2_asimov.py
+HistFitter.py -t -w -f scripts/ulscan_sr2_asimov.py
 wait
 
 #Perform Upper Limit scan for signal strength parameter

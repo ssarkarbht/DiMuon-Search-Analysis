@@ -3,7 +3,9 @@
 ***
 
 > Author : Sourav Sarkar
+
 > Email : <ssarkar1@ualberta.ca>
+
 > Analysis Wiki : <https://wiki.icecube.wisc.edu/index.php/Search_for_Neutrino_DiMuon_Events>
 
 ***
@@ -41,7 +43,7 @@ Specific software and  data files required to run this analysis are not provided
 In order to run analysis tests, first step is to get the repository by running:
 
 ```
-git clone <link> DiMuonAnalysis
+git clone https://github.com/ssarkarbht/DiMuon-Search-Analysis.git DiMuonAnalysis
 ```
 
 Then go to the repository directory and set the required environment and library paths by running:
@@ -99,7 +101,8 @@ Note: All the following fits are performed with a default random seed value `see
 In our analysis, we have two overlapping signal regions (SR1 and SR2). So we will be performing separate discovery and exclusion fit runs for each signal region.
 
 1.  **Background Only Fit**
-   (Option 1) If you have a pulled image of the software, run:
+
+(Option 1) If you have a pulled image of the software, run:
 ```
 cd $ANALYSIS_DIR/histfitter
 singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs histfitter_v1.0.1.sif /DiMuonAnalysis/histfitter/scripts/run_bkgFit.sh
@@ -112,24 +115,26 @@ singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs docker://hist
 
 At the end of the run, you should see an output like the following in your terminal:
 ```
-    <INFO> YieldsTable: Will dump output dictionary:
-    <INFO> YieldsTable: Fitted_err_Bkg: [39.064430238282235, 21.163238606028496, 6.907033718446899, 13.704971739356388, 11.291334274693284]
-    <INFO> YieldsTable: Fitted_events_Bkg: [1536.7560547684059, 389.2182318287321, 59.77200761137556, 199.7261586501464, 91.51551107544655]
-    <INFO> YieldsTable: MC_exp_err_Bkg: [500.24216528248746, 133.44776917817217, 20.614897087878376, 67.87990548185181, 32.11741307307352]
-    <INFO> YieldsTable: MC_exp_events_Bkg: [1583.0449100935887, 400.9389164915122, 61.57242792064174, 205.741244053196, 94.27192154763941]
-    <INFO> YieldsTable: TOTAL_FITTED_bkg_events: [1536.7560547684059, 389.2182318287321, 59.77200761137556, 199.7261586501464, 91.51551107544655]
-    <INFO> YieldsTable: TOTAL_FITTED_bkg_events_err: [39.064430238282235, 21.163238606028496, 6.907033718446899, 13.704971739356388, 11.291334274693284]
-    <INFO> YieldsTable: TOTAL_MC_EXP_BKG_err: [500.24216528248746, 133.44776917817217, 20.614897087878376, 67.87990548185181, 32.11741307307352]
-    <INFO> YieldsTable: TOTAL_MC_EXP_BKG_events: [1583.0449100935887, 400.9389164915122, 61.57242792064174, 205.741244053196, 94.27192154763941]
-    <INFO> YieldsTable: names: ['CR', 'VR1', 'VR2', 'VR3', 'VR4']
-    <INFO> YieldsTable: nobs: [1537.0, 389.0, 46.0, 197.0, 93.0]
-    <INFO> YieldsTable: Result written in: results/burnYield.tex
+<INFO> YieldsTable: Will dump output dictionary:
+<INFO> YieldsTable: Fitted_err_Bkg: [39.051821851400696, 21.240067079300612, 6.8977686391205255, 13.802916258239792, 11.2887454501122]
+<INFO> YieldsTable: Fitted_events_Bkg: [1536.8485586265374, 388.7635189832719, 59.77506379655592, 199.25220516353858, 91.50733971064486]
+<INFO> YieldsTable: MC_exp_err_Bkg: [494.51780015502175, 131.6128752815669, 20.32140475534014, 66.91812067168388, 31.638445591623807]
+<INFO> YieldsTable: MC_exp_events_Bkg: [1532.0206891510602, 387.6101695509315, 59.60165039539179, 198.66612880438302, 91.24055400022584]
+<INFO> YieldsTable: TOTAL_FITTED_bkg_events: [1536.8485586265374, 388.7635189832719, 59.77506379655592, 199.25220516353858, 91.50733971064486]
+<INFO> YieldsTable: TOTAL_FITTED_bkg_events_err: [39.051821851400696, 21.240067079300612, 6.8977686391205255, 13.802916258239792, 11.2887454501122]
+<INFO> YieldsTable: TOTAL_MC_EXP_BKG_err: [494.51780015502175, 131.6128752815669, 20.32140475534014, 66.91812067168388, 31.638445591623807]
+<INFO> YieldsTable: TOTAL_MC_EXP_BKG_events: [1532.0206891510602, 387.6101695509315, 59.60165039539179, 198.66612880438302, 91.24055400022584]
+<INFO> YieldsTable: names: ['CR', 'VR1', 'VR2', 'VR3', 'VR4']
+<INFO> YieldsTable: nobs: [1537.0, 389.0, 46.0, 197.0, 93.0]
+<INFO> YieldsTable: Result written in: results/burnYield.tex
 ```
 
 The run will also generate few output files in `$ANALYSIS_DIR/histfitter/results/` where the fit results are summarised in latex tables - `burnSyst.tex`, `burnYield.tex`.
 
 2.  **Discovery Fit**
+
 (Option 1) If you have a pulled image of the software, run:
+
 - For SR1,
 ```
 singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs histfitter_v1.0.1.sif /DiMuonAnalysis/histfitter/scripts/run_discFit_SR1.sh
@@ -141,6 +146,7 @@ singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs histfitter_v1
 ```
 
 (Option 2) For running the scripts directly,
+
 - For SR1,
 ```
 singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs docker://histfitter/histfitter:v1.0.1 /DiMuonAnalysis/histfitter/scripts/run_discFit_SR1.sh
@@ -154,39 +160,35 @@ singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs docker://hist
 At the end of SR1 fit, you should see a terminal output:
 ```
 Results HypoTestCalculator_result: 
- - Null p-value = 0.0224 +/- 0.00209276
- - Significance = 2.00653 +/- 0.0392715 sigma
+ - Null p-value = 0.0214 +/- 0.00204656
+ - Significance = 2.02566 +/- 0.0399146 sigma
  - Number of Alt toys: 2500
  - Number of Null toys: 5000
- - Test statistic evaluated on data: 1.56054
- - CL_b: 0.0224 +/- 0.00209276
- - CL_s+b: 0.4564 +/- 0.00996191
- - CL_s: 20.375 +/- 1.95483
-<INFO> ConfigMgrCPP: Now storing HypoTestInverterResult <hypo_discovery_Sig>
-<INFO> ConfigMgrCPP: Now storing HypoTestResult <discovery_htr_Sig>
-<INFO> ConfigMgrCPP: Done. Stored HypoTest(Inverter)Result and fit result in file <results/SR1_DiscFits_Output_hypotest.root>
+ - Test statistic evaluated on data: 1.52099
+ - CL_b: 0.0214 +/- 0.00204656
+ - CL_s+b: 0.4388 +/- 0.00992481
+ - CL_s: 20.5047 +/- 2.01503
 ```
 
 At the end of SR2 fit, the output should be:
 ```
 Results HypoTestCalculator_result: 
- - Null p-value = 0.0368 +/- 0.0018827
- - Significance = 1.78909 +/- 0.0233845 sigma
+ - Null p-value = 0.0361 +/- 0.00186539
+ - Significance = 1.79785 +/- 0.0235364 sigma
  - Number of Alt toys: 5000
  - Number of Null toys: 10000
- - Test statistic evaluated on data: 1.55911
- - CL_b: 0.0368 +/- 0.0018827
- - CL_s+b: 0.474 +/- 0.0070615
- - CL_s: 12.8804 +/- 0.686339
-<INFO> ConfigMgrCPP: Now storing HypoTestInverterResult <hypo_discovery_Sig>
-<INFO> ConfigMgrCPP: Now storing HypoTestResult <discovery_htr_Sig>
-<INFO> ConfigMgrCPP: Done. Stored HypoTest(Inverter)Result and fit result in file <results/SR2_DiscFits_Output_hypotest.root>
+ - Test statistic evaluated on data: 1.52133
+ - CL_b: 0.0361 +/- 0.00186539
+ - CL_s+b: 0.4628 +/- 0.00705147
+ - CL_s: 12.8199 +/- 0.690641
 ```
 
 Similar summary output files are generated in `$ANALYSIS_DIR/histfitter/results/`. For SR1 example, relevant summary files are `disc_SR1Syst.tex`, `disc_SR1Yield.tex`.
 
 3.  **Exclusion Fit**
+
 (Option 1) If you have a pulled image of the software, run:
+
 - For SR1,
 ```
 singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs histfitter_v1.0.1.sif /DiMuonAnalysis/histfitter/scripts/run_exclFit_SR1.sh
@@ -198,6 +200,7 @@ singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs histfitter_v1
 ```
 
 (Option 2) For running the scripts directly,
+
 - For SR1,
 ```
 singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs docker://histfitter/histfitter:v1.0.1 /DiMuonAnalysis/histfitter/scripts/run_exclFit_SR1.sh
@@ -210,16 +213,16 @@ singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs docker://hist
 
 At the end of SR1 fit, you should see a terminal output:
 ```
-	CLs      = 0.310289 +/- 0.00877337
-	CLb      = 0.7464 +/- 0.00870143
-	CLsplusb = 0.2316 +/- 0.00596593
+	CLs      = 0.327138 +/- 0.00891566
+	CLb      = 0.7532 +/- 0.00862299
+	CLsplusb = 0.2464 +/- 0.00609405
 ```
 
 At the end of SR2 fit, you should see a terminal output:
 ```
-	CLs      = 0.149293 +/- 0.00569904
-	CLb      = 0.495 +/- 0.00707071
-	CLsplusb = 0.0739 +/- 0.00261608
+	CLs      = 0.150847 +/- 0.00564284
+	CLb      = 0.5078 +/- 0.00707021
+	CLsplusb = 0.0766 +/- 0.00265956
 ```
 
 Similar summary output files are generated in `$ANALYSIS_DIR/histfitter/results/`. For SR1 example, relevant summary files are `excl_SR1Syst.tex`, `excl_SR1Yield.tex`.
@@ -229,6 +232,7 @@ Similar summary output files are generated in `$ANALYSIS_DIR/histfitter/results/
 *[CAUTION :]* Upper limit scan can take several (4-5) hours to run and consumes a large amount of memory (~50GB). It should be run only when the time and computing resources are available.
 
 (Option 1) If you have a pulled image of the software, run:
+
 - For SR1,
 ```
 singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs histfitter_v1.0.1.sif /DiMuonAnalysis/histfitter/scripts/run_ulScan_SR1.sh
@@ -252,6 +256,7 @@ singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs docker://hist
 ```
 
 ### Reproducibility Check
+
 The results of each fit can be visually checked by comparing the end part of the terminal outputs with the outputs provided above for each fit results (assuming running with same default random seed 100). In addition, md5sum hashes are provided for relevant output files for each test run in `$ANALYSIS_DIR/checksum.md5` with the list of files in `$ANALYSIS_DIR/validation_filelist.txt`.
 
 Validity of the output file integrity can be checked by running:

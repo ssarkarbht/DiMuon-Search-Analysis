@@ -16,6 +16,7 @@ from configWriter import fitConfig,Measurement,Channel,Sample
 from systematic import Systematic
 from math import sqrt
 import pickle
+import os
 
 from ROOT import gROOT
 #gROOT.LoadMacro("./macros/AtlasStyle.C")
@@ -66,6 +67,8 @@ configMgr.writeXML = False
 # Keep SRs also in background fit confuguration
 configMgr.keepSignalRegionType = True
 ##########################
+if not os.path.exists("results"):
+        os.makedirs("results")
 
 # Give the analysis a name
 configMgr.analysisName = anaName
