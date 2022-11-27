@@ -255,6 +255,24 @@ singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs docker://hist
 singularity exec -B $ANALYSIS_DIR:/DiMuonAnalysis -B /cvmfs:/cvmfs docker://histfitter/histfitter:v1.0.1 /DiMuonAnalysis/histfitter/scripts/run_ulScan_SR2.sh
 ```
 
+At the end of SR1 fit, you should see a terminal output:
+```
+<INFO> HypoTestTool:  expected limit (median) 2.19499
+<INFO> HypoTestTool:  expected limit (-1 sig) 1.91429
+<INFO> HypoTestTool:  expected limit (+1 sig) 5.48999
+<INFO> HypoTestTool:  expected limit (-2 sig) 1.85701
+<INFO> HypoTestTool:  expected limit (+2 sig) 14.7701
+```
+
+At the end of SR2 fit, you should see a termnal output:
+```
+<INFO> HypoTestTool:  expected limit (median) 1.97862
+<INFO> HypoTestTool:  expected limit (-1 sig) 1.27961
+<INFO> HypoTestTool:  expected limit (+1 sig) 4.67706
+<INFO> HypoTestTool:  expected limit (-2 sig) 1.08522
+<INFO> HypoTestTool:  expected limit (+2 sig) 13.5953
+```
+
 ### Reproducibility Check
 
 The results of each fit can be visually checked by comparing the end part of the terminal outputs with the outputs provided above for each fit results (assuming running with same default random seed 100). In addition, md5sum hashes are provided for relevant output files for each test run in `$ANALYSIS_DIR/checksum.md5` with the list of files in `$ANALYSIS_DIR/validation_filelist.txt`.
