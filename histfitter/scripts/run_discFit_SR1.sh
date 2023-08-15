@@ -10,7 +10,8 @@ wait
 cd /DiMuonAnalysis/histfitter
 
 #Perform the parameter fit
-HistFitter.py -t -w -f scripts/discfit_sr1_asimov.py
+#HistFitter.py -t -w -f scripts/discfit_sr1_asimov.py
+HistFitter.py -t -w -f scripts/discfit_sr1.py
 wait
 
 #get the systematics table
@@ -22,4 +23,4 @@ YieldsTable.py -o results/disc_SR1Yield.tex -c CR,SR -s Bkg,Sig -w results/SR1_D
 wait
 
 #Perform Discovery fit hypothesis test
-HistFitter.py -F disc -z -s $seed scripts/discfit_sr1_asimov.py
+HistFitter.py -F disc -z -s $seed scripts/discfit_sr1.py

@@ -1,0 +1,56 @@
+{
+"Output" : {
+	"outdir" : null,
+	"outfile" : "DataFull.pkl"
+	},
+
+"Input" : {
+	"data_loc" : "/data/user/ssarkar/DiMuonSearch/Data/Graph/transformed/",
+	"score_loc" : "/data/user/ssarkar/DiMuonSearch/Analysis/ScoreData/fullsample/",
+	"filenames" : ["GraphA_IC86.2011_scaled.h5",
+			"GraphA_IC86.2012_scaled.h5",
+			"GraphA_IC86.2013_scaled.h5",
+			"GraphA_IC86.2014_scaled.h5",
+			"GraphA_IC86.2015_scaled.h5",
+			"GraphA_IC86.2016_scaled.h5",
+			"GraphA_IC86.2017_scaled.h5",
+			"GraphA_IC86.2018_scaled.h5",
+			"GraphA_IC86.2019_scaled.h5",
+			"GraphA_IC86.2020_scaled.h5",
+			"GraphA_IC86.2021_scaled.h5"],
+	"Ascores" : ["GraphA_IC86.2011_scaled.dat",
+			"GraphA_IC86.2012_scaled.dat",
+			"GraphA_IC86.2013_scaled.dat",
+			"GraphA_IC86.2014_scaled.dat",
+			"GraphA_IC86.2015_scaled.dat",
+			"GraphA_IC86.2016_scaled.dat",
+			"GraphA_IC86.2017_scaled.dat",
+			"GraphA_IC86.2018_scaled.dat",
+			"GraphA_IC86.2019_scaled.dat",
+			"GraphA_IC86.2020_scaled.dat",
+			"GraphA_IC86.2021_scaled.dat"],
+	"Bscores" : ["GraphB_IC86.2011_scaled.dat",
+			"GraphB_IC86.2012_scaled.dat",
+			"GraphB_IC86.2013_scaled.dat",
+			"GraphB_IC86.2014_scaled.dat",
+			"GraphB_IC86.2015_scaled.dat",
+			"GraphB_IC86.2016_scaled.dat",
+			"GraphB_IC86.2017_scaled.dat",
+			"GraphB_IC86.2018_scaled.dat",
+			"GraphB_IC86.2019_scaled.dat",
+			"GraphB_IC86.2020_scaled.dat",
+			"GraphB_IC86.2021_scaled.dat"]
+	},
+"CutRegions" : {
+	"TOT" : ["boxcut", [0.0, 0.0, 1.0, 1.0]],
+	"CR" : ["boxcut", [0.1, 0.1, 0.5, 0.3]],
+	"VR1" : ["boxcut", [0.3, 0.35, 0.5, 0.45]],
+	"VR2" : ["boxcut", [0.55, 0.2, 0.65, 0.4]],
+	"VR3" : ["boxcut", [0.45, 0.5, 0.7, 0.6]],
+	"VR4" : ["boxcut", [0.67, 0.2, 0.77, 0.6]],
+	"ROI" : ["boxcut", [0.8, 0.4, 1.0, 1.0]],
+	"SR1" : ["hyperbola", [0.861, 0.216]],
+	"SR2" : ["hyperbola", [0.882, 0.463]],
+	"SR3" : ["hyperbola", [0.904, 0.655]]
+	}
+}

@@ -1,0 +1,288 @@
+{
+"all_nofit" : {
+	"reg" : "TOT",
+	"nbins" : 20,
+	"emin" : 1.1e3,
+	"emax" : 5e4,
+	"amin" : 0.0,
+	"amax" : 1.0,
+	"bmin" : 0.0,
+	"bmax" : 1.0,
+	"zmin" : -1.0,
+	"zmax" : 0.0,
+	"fsize" : [6,5],
+	"hratio" : [4,1],
+	"bkg_settings" : {
+		"color" : "#EE8866",
+		"label" : "Total Background",
+		"fill" : true
+	},
+	"sig_settings" : {
+		"color" : "#225555",
+		"label" : "Total Signal",
+		"fill" : true
+	},
+	"unc_settings" : {
+		"ls" : "--",
+		"color" : "k",
+		"alpha" : 0.8
+	},
+	"data_settings" : {
+		"fmt" : "k.",
+		"label" : "IC86.2011-2021",
+		"zorder" : 40
+	},
+	"grid" : {
+		"which" : "both",
+		"alpha" : 0.3,
+		"ls" : "-."
+	},
+	"ratio_band" : {
+		"fill" : true,
+		"ls" : "--",
+		"lw" : 1.2,
+		"alpha" : 0.7,
+		"edgecolor" : "k",
+		"facecolor" : "grey"
+	},
+	"ratio_errorbar" : {
+		"fmt" : "k.",
+		"zorder" : 40
+	},
+	"etrack_scale" : {
+		"legend" : {
+			"loc" : "upper right",
+			"fontsize" : 12
+		},
+		"xscale" : "log",
+		"yscale" : "log",
+		"ylabel" : "Event Rate [/10.67Years/Bin]",
+		"ratio_line" : {
+			"min" : 1e3,
+			"max" : 5e4,
+			"settings" : {
+				"colors" : "r",
+				"linewidth" : 0.8
+			}
+		},
+		"xmin" : 1e3,
+		"xmax" : 6e4,
+		"ax1min" : null,
+		"ax1max" : null,
+		"ax2min" : 0.5,
+		"ax2max" : 1.5
+	},
+	"cosz_scale" : {
+		"legend" : {
+			"loc" : "upper left",
+			"fontsize" : 12
+		},
+		"xscale" : "linear",
+		"yscale" : "log",
+		"ylabel" : "Event Rate [/10.67Years/Bin]",
+		"ratio_line" : {
+			"min" : -1.0,
+			"max" : 0.0,
+			"settings" : {
+				"colors" : "r",
+				"linewidth" : 1.0
+			}
+		},
+		"xmin" : -1.01,
+		"xmax" : 0.01,
+		"ax1min" : null,
+		"ax1max" : null,
+		"ax2min" : 0.5,
+		"ax2max" : 1.5
+	},
+	"apred_scale" : {
+		"legend" : {
+			"loc" : "upper right",
+			"fontsize" : 12
+		},
+		"xscale" : "linear",
+		"yscale" : "log",
+		"ylabel" : "Event Rate [/10.67Years/Bin]",
+		"ratio_line" : {
+			"min" : 0.0,
+			"max" : 1.0,
+			"settings" : {
+				"colors" : "r",
+				"linewidth" : 1.0
+			}
+		},
+		"xmin" : -0.01,
+		"xmax" : 1.01,
+		"ax1min" : null,
+		"ax1max" : null,
+		"ax2min" : 0.5,
+		"ax2max" : 1.5
+	},
+	"bpred_scale" : {
+		"legend" : {
+			"loc" : "lower left",
+			"fontsize" : 12
+		},
+		"xscale" : "linear",
+		"yscale" : "log",
+		"ylabel" : "Event Rate [/10.67Years/Bin]",
+		"ratio_line" : {
+			"min" : 0.0,
+			"max" : 1.0,
+			"settings" : {
+				"colors" : "r",
+				"linewidth" : 1.0
+			}
+		},
+		"xmin" : -0.01,
+		"xmax" : 1.01,
+		"ax1min" : null,
+		"ax1max" : null,
+		"ax2min" : 0.5,
+		"ax2max" : 1.5
+	}
+},
+"roi_nofit" : {
+	"reg" : "ROI",
+	"nbins" : 20,
+	"emin" : 1.1e3,
+	"emax" : 5e4,
+	"amin" : 0.8,
+	"amax" : 1.0,
+	"bmin" : 0.4,
+	"bmax" : 1.0,
+	"zmin" : -1.0,
+	"zmax" : 0.0,
+	"fsize" : [6,5],
+	"hratio" : [4,1],
+	"bkg_settings" : {
+		"color" : "#EE8866",
+		"label" : "Total Background",
+		"fill" : true
+	},
+	"sig_settings" : {
+		"color" : "#225555",
+		"label" : "Total Signal",
+		"fill" : true
+	},
+	"unc_settings" : {
+		"ls" : "--",
+		"color" : "k",
+		"alpha" : 0.8
+	},
+	"data_settings" : {
+		"fmt" : "k.",
+		"label" : "IC86.2011-2021",
+		"zorder" : 40
+	},
+	"grid" : {
+		"which" : "both",
+		"alpha" : 0.3,
+		"ls" : "-."
+	},
+	"ratio_band" : {
+		"fill" : true,
+		"ls" : "--",
+		"lw" : 1.2,
+		"alpha" : 0.7,
+		"edgecolor" : "k",
+		"facecolor" : "grey"
+	},
+	"ratio_errorbar" : {
+		"fmt" : "k.",
+		"zorder" : 40
+	},
+	"etrack_scale" : {
+		"legend" : {
+			"loc" : "upper right",
+			"fontsize" : 12
+		},
+		"xscale" : "log",
+		"yscale" : "log",
+		"ylabel" : "Event Rate [/10.67Years/Bin]",
+		"ratio_line" : {
+			"min" : 1e3,
+			"max" : 5e4,
+			"settings" : {
+				"colors" : "r",
+				"linewidth" : 0.8
+			}
+		},
+		"xmin" : 1e3,
+		"xmax" : 6e4,
+		"ax1min" : null,
+		"ax1max" : null,
+		"ax2min" : 0.5,
+		"ax2max" : 1.5
+	},
+	"cosz_scale" : {
+		"legend" : {
+			"loc" : "upper left",
+			"fontsize" : 12
+		},
+		"xscale" : "linear",
+		"yscale" : "log",
+		"ylabel" : "Event Rate [/10.67Years/Bin]",
+		"ratio_line" : {
+			"min" : -1.0,
+			"max" : 0.0,
+			"settings" : {
+				"colors" : "r",
+				"linewidth" : 1.0
+			}
+		},
+		"xmin" : -1.01,
+		"xmax" : 0.01,
+		"ax1min" : null,
+		"ax1max" : null,
+		"ax2min" : 0.5,
+		"ax2max" : 1.5
+	},
+	"apred_scale" : {
+		"legend" : {
+			"loc" : "upper right",
+			"fontsize" : 12
+		},
+		"xscale" : "linear",
+		"yscale" : "log",
+		"ylabel" : "Event Rate [/10.67Years/Bin]",
+		"ratio_line" : {
+			"min" : 0.8,
+			"max" : 1.0,
+			"settings" : {
+				"colors" : "r",
+				"linewidth" : 1.0
+			}
+		},
+		"xmin" : -7.99,
+		"xmax" : 1.01,
+		"ax1min" : null,
+		"ax1max" : null,
+		"ax2min" : 0.5,
+		"ax2max" : 1.5
+	},
+	"bpred_scale" : {
+		"legend" : {
+			"loc" : "lower left",
+			"fontsize" : 12
+		},
+		"xscale" : "linear",
+		"yscale" : "log",
+		"ylabel" : "Event Rate [/10.67Years/Bin]",
+		"ratio_line" : {
+			"min" : 0.4,
+			"max" : 1.0,
+			"settings" : {
+				"colors" : "r",
+				"linewidth" : 1.0
+			}
+		},
+		"xmin" : -3.99,
+		"xmax" : 1.01,
+		"ax1min" : null,
+		"ax1max" : null,
+		"ax2min" : 0.5,
+		"ax2max" : 1.5
+	}
+}
+}

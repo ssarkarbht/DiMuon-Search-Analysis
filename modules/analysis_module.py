@@ -748,3 +748,18 @@ class AnalysisCutV2:
 		dummy_arr[systype] = arr
 		self.event_arr = dummy_arr
 		return None
+
+class LoadProcessed(AnalysisCutV2):
+	''' This class loads the already processed data
+	and is used for plotting and getting results out
+	'''
+	def __init__(self, dataset):
+		'''Define the required variables for
+		inherited methods to work.
+		'''
+		self.event_arr = dataset
+		self.event_idx = np.ones(len(dataset),
+					dtype=bool)
+		self.EZevent_idx = self.event_idx.copy()
+		self.NEvents = len(dataset)
+

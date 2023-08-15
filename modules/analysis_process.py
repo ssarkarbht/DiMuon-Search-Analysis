@@ -399,6 +399,9 @@ def get_DataCounts(data, cutreg):
         data.apply_curveCut(cutreg[1][0], cutreg[1][1],
                                cutreg[0])
     nobs = len(data.event_arr[data.event_idx])
+    if cutreg[0]=='hyperbola':
+        print (data.event_arr.dtype)
+        print (data.event_arr[data.event_idx])
     return nobs
 
 #This function generates the output pickle file that can be used directly for the 

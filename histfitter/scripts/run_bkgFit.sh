@@ -11,7 +11,8 @@ cd /DiMuonAnalysis/histfitter
 
 echo `pwd`
 #Perform the parameter fit
-HistFitter.py -t -w -f -F bkg scripts/bkgfit_vr_burn.py
+#HistFitter.py -t -w -f -F bkg scripts/bkgfit_vr_burn.py
+HistFitter.py -t -w -f -F bkg scripts/bkgfit_vr.py
 wait
 
 #get the systematics table
