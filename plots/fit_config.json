@@ -1,0 +1,12 @@
+{
+"sr1" : {
+	"bkg_scale" : 0.99168,
+	"sig_scale" : 0.64581,
+	"tot_unc" : 6.947e-3
+},
+"sr2" : {
+	"bkg_scale" : 0.99247,
+	"sig_scale" : 0.5841,
+	"tot_unc" : 6.861e-3
+}
+}
