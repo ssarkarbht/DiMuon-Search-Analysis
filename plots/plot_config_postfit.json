@@ -10,8 +10,8 @@
 	"bmax" : 1.0,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
@@ -156,8 +156,8 @@
 	"bmax" : 0.3,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
@@ -199,6 +199,7 @@
 		"zorder" : 40
 	},
 	"etrack_scale" : {
+                "textpos" : [1e4, 1e2],
 		"legend" : {
 			"loc" : "upper right",
 			"fontsize" : 12
@@ -222,6 +223,7 @@
 		"ax2max" : 1.5
 	},
 	"cosz_scale" : {
+                "textpos" : [-0.5, 6e2],
 		"legend" : {
 			"loc" : "upper left",
 			"fontsize" : 12
@@ -245,6 +247,7 @@
 		"ax2max" : 1.5
 	},
 	"apred_scale" : {
+                "textpos" : [0.15, 3e2],
 		"legend" : {
 			"loc" : "upper right",
 			"fontsize" : 12
@@ -268,6 +271,7 @@
 		"ax2max" : 1.5
 	},
 	"bpred_scale" : {
+                "textpos" : [0.175, 6e2],
 		"legend" : {
 			"loc" : "upper left",
 			"fontsize" : 12
@@ -302,8 +306,8 @@
 	"bmax" : 0.45,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
@@ -448,8 +452,8 @@
 	"bmax" : 0.4,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
@@ -594,8 +598,8 @@
 	"bmax" : 0.6,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
@@ -740,8 +744,8 @@
 	"bmax" : 0.6,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
@@ -886,8 +890,8 @@
 	"bmax" : 1.0,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
@@ -929,6 +933,7 @@
 		"zorder" : 40
 	},
 	"etrack_scale" : {
+                "textpos" : [1e4, 1e1],
 		"legend" : {
 			"loc" : "upper right",
 			"fontsize" : 12
@@ -952,6 +957,7 @@
 		"ax2max" : 1.5
 	},
 	"cosz_scale" : {
+                "textpos" : [-0.6, 1e1],
 		"legend" : {
 			"loc" : "upper left",
 			"fontsize" : 12
@@ -975,6 +981,7 @@
 		"ax2max" : 1.5
 	},
 	"apred_scale" : {
+                "textpos" : [0.85, 1e1],
 		"legend" : {
 			"loc" : "lower left",
 			"fontsize" : 12
@@ -998,6 +1005,7 @@
 		"ax2max" : 1.5
 	},
 	"bpred_scale" : {
+                "textpos" : [0.5, 2],
 		"legend" : {
 			"loc" : "lower left",
 			"fontsize" : 12
@@ -1032,8 +1040,8 @@
 	"bmax" : 1.0,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
@@ -1139,8 +1147,8 @@
 	"bmax" : 1.0,
 	"zmin" : -1.0,
 	"zmax" : 0.0,
-	"fsize" : [6,5],
-	"hratio" : [4,1],
+	"fsize" : [6,5.5],
+	"hratio" : [4,1.2],
 	"bkg_settings" : {
 		"color" : "#EE8866",
 		"label" : "Total Background",
